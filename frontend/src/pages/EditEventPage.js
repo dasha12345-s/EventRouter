@@ -1,7 +1,10 @@
+import { useRouteLoaderData } from 'react-router-dom';
+import EventForm from '../components/EventForm'
+
 function EditEventPage(){
-  return(
-    <h1> edit ZALUPA </h1>
-  )
+  const data = useRouteLoaderData('eve');
+
+  return<EventForm event={data.event}/>;
 }
 
 export default EditEventPage;
