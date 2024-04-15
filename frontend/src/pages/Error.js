@@ -1,4 +1,4 @@
-import { UNSAFE_LocationContext, useRouteError } from "react-router-dom";
+import { useRouteError } from "react-router-dom";
 import PageContent from "../components/PageContent";
 import MainNavigation from "../components/MainNavigation";
 
@@ -9,7 +9,7 @@ let title = 'An Error occurred';
 let message = 'Somthing went wrong';
 
 if (error.status === 500){
-  message = JSON.parse(error.data).message;
+  message = error.data.message;
 }
 
 if (error.status === 404){
