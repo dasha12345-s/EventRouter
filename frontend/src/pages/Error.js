@@ -3,8 +3,8 @@ import PageContent from "../components/PageContent";
 import MainNavigation from "../components/MainNavigation";
 
 function ErrorPage(){
-const error =useRouteError();
-
+const error = useRouteError();
+console.log(error)
 let title = 'An Error occurred';
 let message = 'Somthing went wrong';
 
