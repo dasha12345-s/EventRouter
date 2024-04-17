@@ -7,7 +7,7 @@ const error = useRouteError();
 console.log(error)
 let title = 'An Error occurred';
 let message = 'Somthing went wrong';
-
+console.log(error)
 if (error.status === 500){
   message = error.data.message;
 }
