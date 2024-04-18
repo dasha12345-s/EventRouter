@@ -1,10 +1,11 @@
-import  { Link } from 'react-router-dom';
+import PageContent from "../components/PageContent";
 
 function HomePage(){
   return(
     <>
-    <h1>MY HOME PAGE</h1>
-    <p> GO to <Link to='/events'>Events</Link> page</p>
+   <PageContent title='Welcom!'>
+    <p>Browse all our events</p>
+   </PageContent>
     </>
   )
 }
